@@ -8,7 +8,7 @@ The official baseline model for ["MICCAI 2021 FLARE Challenge: Fast and Low GPU 
 
 Download models from 
 * [Baidu Yun](https://pan.baidu.com/s/1lShlwCGUw6QieXUAIm2ZXg), password: ecio.
-* [Zenodo]()
+* [Google Drive](https://drive.google.com/file/d/1Ox8AjFc_SrJm7waGYzsBbhMfJ0OJoKiY/view?usp=sharing)
 
 ### 2. Setup models
 
