@@ -43,13 +43,17 @@ python get_params.py -m CONFIGURATION
 The output for `2d` should be:
 
 >Total params: 41,268,192
+>
 >Trainable params: 41,268,192
+>
 >Non-trainable params: 0
 
 The output for `3d_fullres` should be:
 
 >Total params: 30,787,584
+>
 >Trainable params: 30,787,584
+>
 >Non-trainable params: 0
 
 We use `torchsummary`  to get the summary of the model.  A simple usage is
