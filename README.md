@@ -32,6 +32,38 @@ python inference/predict_simple.py -i INPUT_FOLDER -o OUTPUT_FOLDER -t Task000_F
 
 For more usage, please refer to [the repositry of nnUNet](https://github.com/MIC-DKFZ/nnUNet).
 
-### 4. Reference
+### 4. Get the number of parameters
+
+```shell
+python get_params.py -m CONFIGURATION
+```
+
+* `CONFIGURATION` should be `2d` or `3d_fullres` referring to 2D or 3D models, respectively.
+
+The output for `2d` should be:
+
+>Total params: 41,268,192
+>Trainable params: 41,268,192
+>Non-trainable params: 0
+
+The output for `3d_fullres` should be:
+
+>Total params: 30,787,584
+>Trainable params: 30,787,584
+>Non-trainable params: 0
+
+We use `torchsummary`  to get the summary of the model.  A simple usage is
+
+```python
+from torchsummary import summary
+
+summary(model, input_size)
+```
+
+Please refer to [pytorch-summary](https://github.com/sksq96/pytorch-summary) for more details. 
+
+We encourage the participants to use it for the analysis of the models. `get_params.py` could be an example to adapt it to your own model.
+
+### 5. Reference
 
 [1] Isensee, Fabian, Paul F Jaeger, Simon A A Kohl, Jens Petersen, and Klaus H Maier-Hein. 2021. “nnU-Net: A Self-Configuring Method for Deep Learning-Based Biomedical Image Segmentation.” Nature Methods 18 (2): 203–11.
