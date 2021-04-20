@@ -92,7 +92,7 @@ from fvcore import FlopCountAnalysis
 
 # The input_size of the baseline model is 1*1*80*192*160
 inputs = (torch.randn(input_size),)
-flips = FlopCountAnalysis(model, inputs)
+flops = FlopCountAnalysis(model, inputs)
 ```
 
 Please refer to [fvcore document](https://detectron2.readthedocs.io/en/latest/modules/fvcore.html#fvcore.nn.FlopCountAnalysis) for more details. 
