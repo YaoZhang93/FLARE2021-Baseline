@@ -26,4 +26,4 @@ patch_size = np.append(np.array(1), patch_size)
 
 inputs = (torch.randn(tuple(np.append(np.array(1),patch_size))).cuda(),)
 flops = FlopCountAnalysis(trainer.network, inputs)
-print('total flops:', flops.total())
+print('Total FLOPs:', flops.total())

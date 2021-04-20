@@ -78,11 +78,11 @@ python get_flops.py -m CONFIGURATION
 
 The output for `2d` should be:
 
->total flops: 61307143168
+>Total FLOPs: 61307143168
 
 The output for `3d_fullres` should be:
 
->total flops: 590861472000
+>Total FLOPs: 590861472000
 
 We use `fvcore`  to get the FLOPs of the model.  A simple usage is
 
