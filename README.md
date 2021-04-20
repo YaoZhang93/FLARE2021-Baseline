@@ -68,6 +68,35 @@ Please refer to [pytorch-summary](https://github.com/sksq96/pytorch-summary) for
 
 We encourage the participants to use it for the analysis of the models. `get_params.py` could be an example to adapt it to your own model.
 
+### 5. Get the number of FLOPs
+
+```shell
+python get_flops.py -m CONFIGURATION
+```
+
+* `CONFIGURATION` should be `2d` or `3d_fullres` referring to 2D or 3D models, respectively.
+
+The output for `2d` should be:
+
+>total flops: 61307143168
+
+The output for `3d_fullres` should be:
+
+>total flops: 590861472000
+
+We use `fvcore`  to get the FLOPs of the model.  A simple usage is
+
+```python
+from fvcore import FlopCountAnalysis
+
+inputs = (torch.randn(input_size),)
+flips = FlopCountAnalysis(model, inputs)
+```
+
+Please refer to [fvcore document](https://detectron2.readthedocs.io/en/latest/modules/fvcore.html#fvcore.nn.FlopCountAnalysis) for more details. 
+
+We encourage the participants to use it for the analysis of the models. `get_flops.py` could be an example to adapt it to your own model.
+
 ### 5. Submission
 
 First, compress the segmentation results by
