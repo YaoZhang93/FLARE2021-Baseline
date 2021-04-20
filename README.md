@@ -61,6 +61,7 @@ We use `torchsummary`  to get the summary of the model.  A simple usage is
 ```python
 from torchsummary import summary
 
+# The input_size of the baseline model is 1*80*192*160
 summary(model, input_size)
 ```
 
@@ -89,6 +90,7 @@ We use `fvcore`  to get the FLOPs of the model.  A simple usage is
 ```python
 from fvcore import FlopCountAnalysis
 
+# The input_size of the baseline model is 1*1*80*192*160
 inputs = (torch.randn(input_size),)
 flips = FlopCountAnalysis(model, inputs)
 ```
@@ -97,7 +99,7 @@ Please refer to [fvcore document](https://detectron2.readthedocs.io/en/latest/mo
 
 We encourage the participants to use it for the analysis of the models. `get_flops.py` could be an example to adapt it to your own model.
 
-### 5. Submission
+### 6. Submission
 
 First, compress the segmentation results by
 
@@ -109,6 +111,6 @@ zip -r TeamNameVal1.zip OUTPUT_FOLDER
 
 Then, submit the results on [FLARE21 submission page](https://flare.grand-challenge.org/evaluation/challenge/submissions/create/).
 
-### 6. Reference
+### 7. Reference
 
 [1] Isensee, Fabian, Paul F Jaeger, Simon A A Kohl, Jens Petersen, and Klaus H Maier-Hein. 2021. “nnU-Net: A Self-Configuring Method for Deep Learning-Based Biomedical Image Segmentation.” Nature Methods 18 (2): 203–11.
