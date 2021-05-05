@@ -99,7 +99,11 @@ Please refer to [fvcore document](https://detectron2.readthedocs.io/en/latest/mo
 
 We encourage the participants to use it for the analysis of the models. `get_flops.py` could be an example to adapt it to your own model.
 
-### 6. Submission
+### 6. Evaluation
+
+Please refer to [FLARE21 Evaluation Code](https://github.com/JunMa11/FLARE2021/tree/main/Evaluation).
+
+### 7. Submission of Segmentation Results
 
 First, compress the segmentation results by
 
@@ -111,6 +115,16 @@ zip -r TeamNameVal1.zip OUTPUT_FOLDER
 
 Then, submit the results on [FLARE21 submission page](https://flare.grand-challenge.org/evaluation/challenge/submissions/create/).
 
-### 7. Reference
+### 8. Build a Docker Image
+
+Build a docker image of the model by
+
+```shell
+docker build -t  docker_image_name .
+```
+
+The configuration of the docker image is in `Dokcerfile`. It will call `predict.sh` when starting the docker image.
+
+### 9. Reference
 
 [1] Isensee, Fabian, Paul F Jaeger, Simon A A Kohl, Jens Petersen, and Klaus H Maier-Hein. 2021. “nnU-Net: A Self-Configuring Method for Deep Learning-Based Biomedical Image Segmentation.” Nature Methods 18 (2): 203–11.
