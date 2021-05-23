@@ -14,8 +14,8 @@ Download models from
 
 ```shell
 git clone https://github.com/YaoZhang93/FLARE21nnUNetBaseline.git
-cp ./FLARE21nnUNetBaseline/nnUNet.zip ./FLARE21/nunet/data/RESULTS_FOLDER/
-cd ./FLARE21/nunet/data/RESULTS_FOLDER/
+cp ./FLARE21nnUNetBaseline/nnUNet.zip ./FLARE21/datasets
+cd ./FLARE21nnUNetBaseline/FLARE21/datasets/
 unzip nnUNet.zip
 cd ../..
 ```
