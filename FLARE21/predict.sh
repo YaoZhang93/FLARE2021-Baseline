@@ -7,4 +7,4 @@ export nnUNet_raw_data_base="$PWD"
 # 结果目录
 export RESULTS_FOLDER="$PWD/datasets/"
 
-nnUNet_predict -i "/workspace/inputs/"  -o "/workspace/outputs/"  -t 121 -f all --disable_tta -tr nnUNetTrainerV2 -m 3d_fullres
+nnUNet_predict -i "/workspace/inputs/"  -o "/workspace/outputs/"  -t Task000_FLARE21Baseline -f all --disable_tta -tr nnUNetTrainerV2 -m 3d_fullres
