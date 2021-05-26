@@ -124,6 +124,7 @@ docker build -t  docker_image_name .
 ```
 
 The configuration of the docker image is in `Dokcerfile`. It will call `predict.sh` when starting the docker image.
+Please refer to the  [vedio](https://www.bilibili.com/video/BV1Xb4y1o7ZK/) for more details.
 
 ### 9. Reference
 
