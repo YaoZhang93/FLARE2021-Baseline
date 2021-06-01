@@ -7,7 +7,7 @@ The official baseline model for ["MICCAI 2021 FLARE Challenge: Fast and Low GPU 
 ### 1. Download pretrained models
 
 Download models from 
-* [Baidu Yun](https://pan.baidu.com/s/1tCvK6ZRGFB2Je3NcdBU4qg) (PW: 2021).
+* [Baidu Net Disk](https://pan.baidu.com/s/1tCvK6ZRGFB2Je3NcdBU4qg) (PW: 2021).
 * [Google Drive](https://drive.google.com/file/d/1Ox8AjFc_SrJm7waGYzsBbhMfJ0OJoKiY/view?usp=sharing)
 
 ### 2. Setup models
