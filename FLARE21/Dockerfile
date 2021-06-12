@@ -1,8 +1,9 @@
 FROM pytorch/pytorch:1.6.0-cuda10.1-cudnn7-runtime
 
 # XXX: IN CASE apt-get update fail, you can uncomment below two lines
-# RUN echo "change apt-get source to aliyun mirrors"
-# ADD sources.list /etc/apt/
+# RUN sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list  && \
+#    sed -i s@/security.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list
+# RUN echo [global]'\n'index-url = https://mirrors.aliyun.com/pypi/simple/ > /etc/pip.conf
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 	# we have found python3.7 in base docker
