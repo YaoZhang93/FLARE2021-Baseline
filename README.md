@@ -1,4 +1,4 @@
-# FLARE 2021 Baseline
+# FLARE21 Baseline
 
 The official baseline model for ["MICCAI 2021 FLARE Challenge: Fast and Low GPU memory Abdominal oRgan sEgmentation"](https://flare.grand-challenge.org/FLARE21/), derived from [nnUNet](https://github.com/MIC-DKFZ/nnUNet) [1].
 
