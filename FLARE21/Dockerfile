@@ -29,6 +29,6 @@ RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 # RUN pip install pip_packages/scikit_learn-0.24.2-cp37-cp37m-manylinux2010_x86_64.whl
 
 RUN pip install -e .
-RUN rm -rf pip_packages
+# RUN rm -rf pip_packages
 
 CMD ["bash", "predict.sh"]
