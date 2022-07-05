@@ -31,4 +31,4 @@ RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 RUN pip install -e .
 # RUN rm -rf pip_packages
 
-CMD ["bash", "predict.sh"]
+
